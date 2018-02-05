@@ -1,0 +1,612 @@
+{% extends 'base.html' %}
+<!DOCTYPE html>
+<html lang="en" xmlns:padding-left="http://www.w3.org/1999/xhtml">
+<head>
+    {% block head %}
+        <title>Employee Transport Solution For Enterprises</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static 'homepage/style.css' %}">
+    {% endblock %}
+</head>
+
+<body>
+{% block body %}
+    {#header#}
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark indigo fixed-top">
+            <div class="view overlay hm-zoom">
+                <img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/logo.png' %}" class="img-fluid" alt="Responsive image">
+                <div class="mask"></div>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto smooth-scroll" >
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#" style="margin-right: 15px">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#best-features" style="margin-right: 15px">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#examples" style="margin-right: 15px">Demo</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#gallery" style="margin-right: 15px">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact" style="margin-right: 15px">Contact</a>
+                    </li>
+
+                </ul>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" style="height: 10px" type="text" placeholder="Username" aria-label="Search">
+                </form>
+                <form class="form-inline">
+                    <input class="form-control mr-sm-2" style="height: 10px" type="password" placeholder="Password" aria-label="Search">
+                </form>
+                <form class="form-inline" style="height: 30px">
+                    <button class="btn btn-light-green" type="button">Login</button>
+                </form>
+
+            </div>
+
+        </nav>
+        <div  id="intro" class="view hm-black-strong">
+
+            <div class="container-fluid full-bg-img d-flex align-items-center justify-content-center">
+
+                <div class="row d-flex justify-content-center">
+
+                    <div class="col-md-10 text-center">
+
+                        <!-- Heading -->
+                        <h6 class="display-3 font-bold white-text mb-2">ETSE Transport</h6>
+
+                        <!-- Divider -->
+                        <hr class="hr-light">
+
+                        <!-- Description -->
+                        <h4 class="white-text my-4">One stop solution for all your employee transport related service</h4>
+                        <button type="button" class="btn btn-outline-white">Read more<i class="fa fa-book ml-2"></i></button>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    {#main#}
+    <main>
+        <div class="container-fluid">
+            <section id="About">
+                <h2 class="mt-5 text-center">About</h2>
+                <div class="row mt-5">
+                    <div class="col-md-7 mb-4">
+                        <div class="view overlay hm-white-light z-depth-1-half">
+                            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" style="height: 400px" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+                    </div>
+                    <div class="col-md-5 mb-4">
+                        <h2>Employee Transport Solution For Enterprises</h2>
+                        <hr>
+                        <p>The
+                            idea of this project is to design and develop a smart cloud-based transportation solution for large
+                            enterprises to optimize the cost and the travel time of their transporting units along with maintaining
+                            the employee satisfaction. The system should be capable of utilizing the resources efficiently such that
+                            maximum objectives can be achieved with a minimal investment of time, money and manpower. This project is a
+                            ones stop solution for all the transport related services that an organization has to offer to
+                            its employees</p>
+                        <a href="#" class="btn unique-color">Get it now!</a>
+                    </div>
+                </div>
+            </section>
+            <hr class="my-5">
+
+            <!--Section: Best Features-->
+            <section id="best-features" class="text-center mt-5">
+                <h2 class="mb-4">Best Features</h2>
+
+                <!--Grid row-->
+                <div class="row d-flex justify-content-center mb-4">
+
+                    <!--Grid column-->
+                    <div class="col-md-8">
+
+                        <!-- Description -->
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi voluptate hic provident nulla repellat
+                            facere esse molestiae ipsa labore porro minima quam quaerat rem, natus repudiandae debitis est
+                            sit pariatur.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-camera-retro fa-4x orange-text"></i>
+                        <h4 class="my-4 font-weight-bold">Experience</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1">
+                        <i class="fa fa-heart fa-4x green-text"></i>
+                        <h4 class="my-4 font-weight-bold">Happiness</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-4 mb-1" >
+                        <i class="fa fa-bicycle fa-4x blue-text"></i>
+                        <h4 class="my-4 font-weight-bold">Adventure</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+
+
+            </section>
+            <!--Section: Best Features-->
+
+            <hr class="my-5">
+
+            <section id="examples" class="text-center">
+                <h2 class="mb-4">Services We Provide</h2>
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="view overlay hm-zoom">
+                            <center><img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/record.png' %}" class="img-fluid" alt="zoom"></center>
+                            <div class="mask flex-center waves-effect waves-light">
+                            </div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Transportation Record</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="view overlay hm-zoom">
+                            <center><img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/tracking.png' %}" class="img-fluid " alt="zoom"></center>
+                            <div class="mask flex-center waves-effect waves-light">
+                            </div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Vehicle Tracking</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <div class="view overlay hm-zoom">
+                            <center><img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/erouting.png' %}" align="center" class="img-fluid " alt="zoom"></center>
+                            <div class="mask flex-center waves-effect waves-light">
+                            </div>
+                        </div>
+                        <h4 class="my-4 font-weight-bold">Automatic Routing</h4>
+                    </div>
+                </div>
+                <div class="row text-center">
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="view overlay hm-zoom">
+                            <center><img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/driver.png' %}" class="img-fluid" alt="zoom"></center>
+                            <div class="mask flex-center waves-effect waves-light">
+                            </div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Driver Independence</h4>
+                    </div>
+
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="view overlay hm-zoom">
+                            <center><img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/AutomaticBilling.png' %}" class="img-fluid " alt="zoom"></center>
+                            <div class="mask flex-center waves-effect waves-light">
+                            </div>
+                        </div>
+
+                        <h4 class="my-4 font-weight-bold">Automatic Billing</h4>
+                    </div>
+                    <div class="col-lg-4 col-md-12 mb-4">
+
+                        <div class="view overlay hm-zoom">
+                            <center><img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/women.png' %}" align="center" class="img-fluid " alt="zoom"></center>
+                            <div class="mask flex-center waves-effect waves-light">
+                            </div>
+                        </div>
+                        <h4 class="my-4 font-weight-bold">Women Safty</h4>
+                    </div>
+                </div>
+            </section>
+
+            <hr class="my-5">
+
+            <!--Section: Examples-->
+            <section id="examples" class="text-center">
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="view overlay z-depth-1-half hm-white-slight">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/48.jpg" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="view overlay z-depth-1-half hm-white-slight">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/49.jpg" class="img-fluid" alt="">
+                            <div class="mask"></div>
+                        </div>
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="view overlay z-depth-1-half hm-white-slight">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/50.jpg" class="img-fluid" alt="">
+                            <a href="https://www.google.com">
+                                <div class="mask"></div></a>
+                        </div>
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-12 mb-4">
+                        <div class="view overlay z-depth-1-half hm-white-slight">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/51.jpg" class="img-fluid" alt="">
+                            <a href="https://www.google.com">
+                                <div class="mask"></div></a>
+                        </div>
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="view overlay z-depth-1-half hm-white-slight">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/52.jpg" class="img-fluid" alt="">
+                            <a href="https://www.google.com">
+                                <div class="mask"></div></a>
+                        </div>
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="view overlay z-depth-1-half hm-white-slight">
+                            <img src="https://mdbootstrap.com/img/Photos/Others/images/53.jpg" class="img-fluid" alt="">
+                            <a href="https://www.google.com">
+                                <div class="mask"></div></a>
+                        </div>
+                        <h4 class="my-4 font-weight-bold">Heading</h4>
+                        <p class="grey-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reprehenderit maiores nam, aperiam minima
+                            assumenda deleniti hic.</p>
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+
+
+            </section>
+            <!--Section: Examples-->
+
+            <hr class="my-5">
+
+            <!--Section: Gallery-->
+            <section id="gallery">
+
+                <!-- Heading -->
+                <h2 class="mb-5 font-weight-bold text-center">Gallery heading</h2>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <!--Carousel Wrapper-->
+                        <div id="carousel-example-1z" class="carousel slide carousel-fade" data-ride="carousel">
+                            <!--Indicators-->
+                            <ol class="carousel-indicators">
+                                <li data-target="#carousel-example-1z" data-slide-to="0" class="active"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="1"></li>
+                                <li data-target="#carousel-example-1z" data-slide-to="2"></li>
+                            </ol>
+                            <!--/.Indicators-->
+                            <!--Slides-->
+                            <div class="carousel-inner z-depth-1-half" role="listbox">
+                                <!--First slide-->
+                                <div class="carousel-item active">
+                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Others/images/84.jpg" alt="First slide">
+                                </div>
+                                <!--/First slide-->
+                                <!--Second slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Others/images/85.jpg" alt="Second slide">
+                                </div>
+                                <!--/Second slide-->
+                                <!--Third slide-->
+                                <div class="carousel-item">
+                                    <img class="d-block w-100" src="https://mdbootstrap.com/img/Photos/Others/images/86.jpg" alt="Third slide">
+                                </div>
+                                <!--/Third slide-->
+                            </div>
+                            <!--/.Slides-->
+                            <!--Controls-->
+                            <a class="carousel-control-prev" href="#carousel-example-1z" role="button" data-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                            <a class="carousel-control-next" href="#carousel-example-1z" role="button" data-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="sr-only">Next</span>
+                            </a>
+                            <!--/.Controls-->
+                        </div>
+                        <!--/.Carousel Wrapper-->
+
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-md-6">
+                        <!--Excerpt-->
+                        <a href="" class="teal-text">
+                            <h6 class="pb-1"><i class="fa fa-heart"></i><strong> Lifestyle </strong></h6>
+                        </a>
+                        <h4 class="mb-3"><strong>This is title of the news</strong></h4>
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
+                            debitis aut rerum.</p>
+
+                        <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime
+                            placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus et aut officiis
+                            debitis aut rerum.</p>
+                        <p>by <a><strong>Jessica Clark</strong></a>, 26/08/2016</p>
+                        <a class="btn btn-primary btn-md waves-effect waves-light">Read more</a>
+
+
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Gallery-->
+
+            <hr class="my-5">
+
+            <!--Section: Contact-->
+            <section id="contact" class="section mb-5 pt-5">
+                <h2 class="mb-4 text-center">Contact Us</h2>
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-md-12">
+
+                        <!--Form with header-->
+                        <div class="card">
+                            <div class="row">
+                                <div class="col-lg-8">
+                                    <div class="card-body form">
+                                        <!--Header-->
+                                        <div class="formHeader mb-1 pt-3">
+                                            <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+                                        </div>
+
+                                        <br>
+
+                                        <form>
+                                            <!--Grid row-->
+                                            <div class="row">
+
+                                                <!--Grid column-->
+                                                <div class="col-md-6">
+                                                    <div class="md-form">
+                                                        <div class="md-form">
+                                                            <input type="text" id="form-contact-name" class="form-control">
+                                                            <label for="form-contact-name" class="">Your name</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Grid column-->
+
+                                                <!--Grid column-->
+                                                <div class="col-md-6">
+                                                    <div class="md-form">
+                                                        <div class="md-form">
+                                                            <input type="text" id="form-contact-email" class="form-control">
+                                                            <label for="form-contact-email" class="">Your email</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Grid column-->
+
+                                            </div>
+                                            <!--Grid row-->
+
+                                            <!--Grid row-->
+                                            <div class="row">
+
+                                                <!--Grid column-->
+                                                <div class="col-md-6">
+                                                    <div class="md-form">
+                                                        <div class="md-form">
+                                                            <input type="text" id="form-contact-phone" class="form-control">
+                                                            <label for="form-contact-phone" class="">Your phone</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Grid column-->
+
+                                                <!--Grid column-->
+                                                <div class="col-md-6">
+                                                    <div class="md-form">
+                                                        <div class="md-form">
+                                                            <input type="text" id="form-contact-company" class="form-control">
+                                                            <label for="form-contact-company" class="">Your company</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!--Grid column-->
+
+                                            </div>
+                                            <!--Grid row-->
+
+                                            <!--Grid row-->
+                                            <div class="row">
+
+                                                <!--Grid column-->
+                                                <div class="col-md-12">
+
+                                                    <div class="md-form">
+                                                        <textarea type="text" id="form-contact-message" class="md-textarea"></textarea>
+                                                        <label for="form-contact-message">Your message</label>
+                                                        <a class="btn-floating btn-lg blue"><i class="fa fa-send-o"></i></a>
+                                                    </div>
+
+                                                </div>
+                                                <!--Grid column-->
+
+                                            </div>
+                                            <!--Grid row-->
+                                        </form>
+
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 bg-indigo">
+                                    <div class="card-body contact">
+                                        <div class="container">
+                                            <div class="mb-5">
+                                                <h3>Contact information</h3>
+                                            </div>
+
+                                            <ul class="contact-icons ">
+                                                <li><i class="fa fa-map-marker"></i>
+                                                    <p>San Francisco, CA 94126, USA</p>
+                                                </li>
+
+                                                <li><i class="fa fa-phone"></i>
+                                                    <p>+ 01 234 567 89</p>
+                                                </li>
+
+                                                <li><i class="fa fa-envelope"></i>
+                                                    <p>contact@example.com</p>
+                                                </li>
+                                            </ul>
+
+                                            <hr class="hr-light mb-4 mt-4">
+
+                                            <ul class="inline-ul text-center list-unstyled">
+                                                <li><a class="icons-sm tw-ic"><i class="fa fa-twitter"></i></a></li>
+                                                <li><a class="icons-sm li-ic"><i class="fa fa-linkedin"> </i></a></li>
+                                                <li><a class="icons-sm ins-ic"><i class="fa fa-instagram"> </i></a></li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--/Form with header-->
+
+                    </div>
+                    <!--Grid column-->
+
+                </div>
+                <!--Grid row-->
+
+            </section>
+            <!--Section: Contact v.3-->
+
+        </div>
+    </main>
+
+    {#footer#}
+    <footer class="page-footer blue center-on-small-only">
+
+        <!--Footer Links-->
+        <div class="container-fluid">
+            <div class="row">
+
+                <!--First column-->
+                <div class="col-md-6">
+                    <h5 class="title">Footer Content</h5>
+                    <p>Here you can use rows and columns here to organize your footer content.</p>
+                </div>
+                <!--/.First column-->
+
+                <!--Second column-->
+                <div class="col-md-6">
+                    <h5 class="title">Links</h5>
+                    <ul>
+                        <li><a href="#!">Link 1</a></li>
+                        <li><a href="#!">Link 2</a></li>
+                        <li><a href="#!">Link 3</a></li>
+                        <li><a href="#!">Link 4</a></li>
+                    </ul>
+                </div>
+                <!--/.Second column-->
+            </div>
+        </div>
+        <!--/.Footer Links-->
+
+        <!--Copyright-->
+        <div class="footer-copyright">
+            <div class="container-fluid">
+                © 2015 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
+
+            </div>
+        </div>
+        <!--/.Copyright-->
+
+    </footer>
+    <!--/.Footer-->
+
+
+{% endblock %}
+</body>
+
+</html>
