@@ -20,4 +20,5 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^home/', include('landing_page.urls')),
     url(r'^homeagain/', include('homepage.urls')),
+url(r'^dashboard/', include('dashboard.urls')),
 ]

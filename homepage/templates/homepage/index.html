@@ -24,17 +24,18 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto smooth-scroll" >
                     <li class="nav-item active">
-                        <a class="nav-link" href="#" style="margin-right: 15px">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#intro" style="margin-right: 15px">Home <span class="sr-only">(current)</span></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#best-features" style="margin-right: 15px">Services</a>
+                        <a class="nav-link" href="#About" style="margin-right: 15px">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services" style="margin-right: 15px">Services</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#examples" style="margin-right: 15px">Demo</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#gallery" style="margin-right: 15px">About</a>
-                    </li>
+
                     <li class="nav-item">
                         <a class="nav-link" href="#contact" style="margin-right: 15px">Contact</a>
                     </li>
@@ -46,7 +47,7 @@
                 <form class="form-inline">
                     <input class="form-control mr-sm-2" style="height: 10px" type="password" placeholder="Password" aria-label="Search">
                 </form>
-                <form class="form-inline" style="height: 30px">
+                <form class="form-inline" style="height: 30px" action="/landing_page/templates/landing_page/index.html">
                     <button class="btn btn-light-green" type="button">Login</button>
                 </form>
 
@@ -82,26 +83,28 @@
     {#main#}
     <main>
         <div class="container-fluid">
-            <section id="About">
-                <h2 class="mt-5 text-center">About</h2>
-                <div class="row mt-5">
-                    <div class="col-md-7 mb-4">
-                        <div class="view overlay hm-white-light z-depth-1-half">
-                            <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" style="height: 400px" class="img-fluid" alt="">
-                            <div class="mask"></div>
+            <section id="About" class="mt-5">
+                <div class="mt-5">
+                    <h2 class="mt-5 text-center">About</h2>
+                    <div class="row mt-5">
+                        <div class="col-md-7 mb-4">
+                            <div class="view overlay hm-white-light z-depth-1-half">
+                                <img src="https://mdbootstrap.com/img/Photos/Slides/img%20(70).jpg" style="height: 400px" class="img-fluid" alt="">
+                                <div class="mask"></div>
+                            </div>
                         </div>
-                    </div>
-                    <div class="col-md-5 mb-4">
-                        <h2>Employee Transport Solution For Enterprises</h2>
-                        <hr>
-                        <p>The
-                            idea of this project is to design and develop a smart cloud-based transportation solution for large
-                            enterprises to optimize the cost and the travel time of their transporting units along with maintaining
-                            the employee satisfaction. The system should be capable of utilizing the resources efficiently such that
-                            maximum objectives can be achieved with a minimal investment of time, money and manpower. This project is a
-                            ones stop solution for all the transport related services that an organization has to offer to
-                            its employees</p>
-                        <a href="#" class="btn unique-color">Get it now!</a>
+                        <div class="col-md-5 mb-4">
+                            <h2>Employee Transport Solution For Enterprises</h2>
+                            <hr>
+                            <p>The
+                                idea of this project is to design and develop a smart cloud-based transportation solution for large
+                                enterprises to optimize the cost and the travel time of their transporting units along with maintaining
+                                the employee satisfaction. The system should be capable of utilizing the resources efficiently such that
+                                maximum objectives can be achieved with a minimal investment of time, money and manpower. This project is a
+                                ones stop solution for all the transport related services that an organization has to offer to
+                                its employees</p>
+                            <a href="#" class="btn unique-color">Get it now!</a>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -164,9 +167,9 @@
             </section>
             <!--Section: Best Features-->
 
-            <hr class="my-5">
+            <hr class="my-5" id="services">
 
-            <section id="examples" class="text-center">
+            <section class="text-center">
                 <h2 class="mb-4">Services We Provide</h2>
                 <div class="row text-center">
                     <div class="col-lg-4 col-md-12 mb-4">
@@ -181,7 +184,7 @@
 
                     <div class="col-lg-4 col-md-12 mb-4">
                         <div class="view overlay hm-zoom">
-                            <center><img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/tracking.png' %}" class="img-fluid " alt="zoom"></center>
+                            <center><img src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/tracking.png' %}" class="img-fluid" alt="zoom"></center>
                             <div class="mask flex-center waves-effect waves-light">
                             </div>
                         </div>
@@ -415,10 +418,10 @@
             </section>
             <!--Section: Gallery-->
 
-            <hr class="my-5">
+            <hr class="my-5" id="contact">
 
             <!--Section: Contact-->
-            <section id="contact" class="section mb-5 pt-5">
+            <section class="section mb-5 pt-5">
                 <h2 class="mb-4 text-center">Contact Us</h2>
                 <!--Grid row-->
                 <div class="row">
@@ -565,46 +568,73 @@
     </main>
 
     {#footer#}
-    <footer class="page-footer blue center-on-small-only">
+    <!--Footer-->
+    <footer class="page-footer indigo center-on-small-only pt-0">
 
         <!--Footer Links-->
-        <div class="container-fluid">
+        <div class="container">
+
+            <!--First row-->
             <div class="row">
 
                 <!--First column-->
-                <div class="col-md-6">
-                    <h5 class="title">Footer Content</h5>
-                    <p>Here you can use rows and columns here to organize your footer content.</p>
-                </div>
-                <!--/.First column-->
+                <div class="col-md-12">
 
-                <!--Second column-->
-                <div class="col-md-6">
-                    <h5 class="title">Links</h5>
-                    <ul>
-                        <li><a href="#!">Link 1</a></li>
-                        <li><a href="#!">Link 2</a></li>
-                        <li><a href="#!">Link 3</a></li>
-                        <li><a href="#!">Link 4</a></li>
-                    </ul>
+                    <div class="footer-socials mb-5 flex-center">
+
+                        <!--Facebook-->
+
+                        <div class="view overlay hm-zoom">
+                            <i class="fa fa-facebook pr-lg-3 pr-md-1 fa-2x red-text"></i>
+                            <div class="mask d-inline-flex p-2">
+                            </div>
+                        </div>
+                        <!--Twitter-->
+
+                        <!--Google +-->
+
+                        <div class="view overlay hm-zoom">
+                            <i class="fa fa-google-plus pr-lg-3 pr-md-1 fa-2x red-text"></i>
+                            <div class="mask d-inline-flex p-2">
+                            </div>
+                        </div>
+
+                        <!--Instagram-->
+                        <div class="view overlay hm-zoom">
+                            <i class="fa fa-linkedin pr-lg-3 pr-md-1 fa-2x red-text"></i>
+                            <div class="mask d-inline-flex p-2">
+                            </div>
+                        </div>
+
+                        <div class="view overlay hm-zoom">
+                            <i class="fa fa-instagram pr-lg-3 pr-md-1 fa-2x red-text"></i>
+                            <div class="mask d-inline-flex p-2">
+                            </div>
+                        </div>
+                        <!--Pinterest-->
+                        <div class="view overlay hm-zoom">
+                            <i class="fa fa-pinterest pr-lg-3 pr-md-1 fa-2x red-text"></i>
+                            <div class="mask d-inline-flex p-2">
+                            </div>
+                        </div>
+
+                    </div>
                 </div>
-                <!--/.Second column-->
+                <!--/First column-->
             </div>
+            <!--/First row-->
         </div>
-        <!--/.Footer Links-->
-
+        <!--/Footer Links-->
         <!--Copyright-->
         <div class="footer-copyright">
             <div class="container-fluid">
-                © 2015 Copyright: <a href="https://www.MDBootstrap.com"> MDBootstrap.com </a>
-
+                © 2017 Copyright: <a href="https://www.facebook.com/muradkhateeb.abbasi"> ETSE Transport </a>
             </div>
         </div>
-        <!--/.Copyright-->
+        <!--/Copyright-->
 
     </footer>
-    <!--/.Footer-->
-
+    <!--/Footer-->
 
 {% endblock %}
 </body>
