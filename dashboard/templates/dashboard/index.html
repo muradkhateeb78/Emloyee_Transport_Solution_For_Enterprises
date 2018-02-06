@@ -4,75 +4,276 @@
 <head>
     {% block head %}
         <title>Employee Transport Solution For Enterprises</title>
+        {% load static %}
+        <link rel="stylesheet" type="text/css" href="{% static '/dashboard/style.css' %}">
     {% endblock %}
 </head>
 
 <body>
 {% block body %}
-<!--Main Navigation-->
-<header>
-<!--Navbar-->
-<nav class="navbar navbar-expand-lg navbar-dark indigo">
-
-    <!-- Navbar brand -->
-    <a class="navbar-brand" href="#">Navbar</a>
-
-    <!-- Collapse button -->
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
-
-    <!-- Collapsible content -->
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-
-        <!-- Links -->
-        <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Features</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-            </li>
-
-            <!-- Dropdown -->
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
-
-        </ul>
-        <!-- Links -->
-
-        <!-- Search form -->
-        <form class="form-inline">
-            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
-        </form>
+        {#    sideNaviagtionBar#}
+    <div id="mySidenav" class="sidenav ">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
+        <div class="view overlay hm-blue-light">
+            <div class="logo-wrapper">
+                <a href="#">
+                    <img src="/static/Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/logo.png" class="img-fluid flex-center">
+                </a>
+            </div>
+        </div>
+        <div class="view overlay hm-blue-light mt-5">
+            <div class="nav-item black-text-strong">
+                <a class="nav-link">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Home</span>
+                </a>
+            </div>
+            <div class="mask flex-center">
+                <p class="white-text"></p>
+            </div>
+        </div>
+        <div class="view overlay hm-blue-light">
+            <div class="nav-item black-text-strong">
+                <a class="nav-link">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Resources</span>
+                </a>
+            </div>
+            <div class="mask flex-center">
+                <p class="white-text"></p>
+            </div>
+        </div>
+        <div class="view overlay hm-blue-light">
+            <div class="nav-item black-text-strong">
+                <a class="nav-link">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Employees</span>
+                </a>
+            </div>
+            <div class="mask flex-center">
+                <p class="white-text"></p>
+            </div>
+        </div>
+        <div class="view overlay hm-blue-light">
+            <div class="nav-item black-text-strong">
+                <a class="nav-link">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Track Vehicle</span>
+                </a>
+            </div>
+            <div class="mask flex-center">
+                <p class="white-text"></p>
+            </div>
+        </div>
+        <div class="view overlay hm-blue-light">
+            <div class="nav-item black-text-strong">
+                <a class="nav-link">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Accounts</span>
+                </a>
+            </div>
+            <div class="mask flex-center">
+                <p class="white-text"></p>
+            </div>
+        </div>
+        <div class="view overlay hm-blue-light">
+            <div class="nav-item black-text-strong">
+                <a class="nav-link">
+                    <i class="fa fa-gear"></i>
+                    <span class="clearfix d-none d-sm-inline-block">Settings</span>
+                </a>
+            </div>
+            <div class="mask flex-center">
+                <p class="white-text"></p>
+            </div>
+        </div>
     </div>
-    <!-- Collapsible content -->
+    <!--Main Navigation-->
+    <section id="slide">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark indigo">
+                <span style="font-size:30px;cursor:pointer" class="mr-5" onclick="openNav()">&#9776;</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto smooth-scroll" >
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#intro" style="margin-right: 15px">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#About" style="margin-right: 15px">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#services" style="margin-right: 15px">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#examples" style="margin-right: 15px">Demo</a>
+                        </li>
 
-</nav>
-<!--/.Navbar-->
-              
-</header>
-<!--Main Navigation-->
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact" style="margin-right: 15px">Contact</a>
+                        </li>
 
-<!--Main layout-->
-<main>
+                    </ul>
+                    <ul class="nav navbar-nav nav-flex-icons ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fa fa-envelope"></i>
+                                <span class="clearfix d-none d-sm-inline-block">Contact</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link">
+                                <i class="fa fa-gear"></i>
+                                <span class="clearfix d-none d-sm-inline-block">Settings</span>
+                            </a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class="fa fa-user"></i>
+                                <span class="clearfix d-none d-sm-inline-block">Account</span>
+                            </a>
+                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="#">Log Out</a>
+                            </div>
+                        </li>
+                    </ul>
 
-</main>
-<!--Main layout-->
+                </div>
 
-<!--Footer-->
-<footer>
+            </nav>
 
-</footer>
-<!--Footer-->
+
+
+        </header>
+
+        <main class="container-fluid">
+            <section>
+
+                <!--Grid row-->
+                <div class="row">
+
+                    <!--Grid column-->
+                    <div class="col-xl-8 col-md-6 mt-4 mb-r">
+
+                        <!--Panel-->
+                        <div class="card">
+                            <div class="card-header white-text primary-color text-center">
+                                Live Vehicle Tracking
+                            </div>
+                            <div class="container mt-2 mb-2">
+                                <div class="view overlay hm-white-light z-depth-1-half">
+                                    <img src="/static/Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/map.jpg" style="height: 400px" class="img-fluid" alt="">
+                                    <div class="mask"></div>
+                                </div></div>
+                        </div>
+                        <!--/.Panel-->
+
+                    </div>
+                    <!--Grid column-->
+
+                    <!--Grid column-->
+                    <div class="col-xl-4 col-md-6 mt-4 mb-r">
+
+                        <!--Panel-->
+                        <div class="card">
+                            <div class="card-header white-text red accent-2 text-center">
+                                Vehicles Usability Graph
+                            </div>
+                            <canvas id="pieChart" class="img-fluid"></canvas>
+                        </div>
+                        <!--/.Panel-->
+
+
+                    </div>
+                    <!--Grid column-->
+                </div>
+                <!--Grid row-->
+
+            </section>       <section class="container-fluid">
+            <div class="row mb-4">
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-md-6 mt-2">
+
+                    <!--Panel-->
+                    <div class="card">
+                        <div class="card-header white-text primary-color">
+                            Orders
+                        </div>
+
+                        <h6 class="ml-4 mt-5 dark-grey-text font-bold"><i class="fa fa-long-arrow-up blue-text mr-3" aria-hidden="true"></i> 2000</h6>
+                        <!--/.Card Data-->
+
+                    </div>
+                    <!--/.Panel-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-md-6 mt-2">
+
+                    <!--Panel-->
+                    <div class="card">
+                        <div class="card-header white-text warning-color">
+                            Monthly sales
+                        </div>
+
+                        <h6 class="ml-4 mt-5 dark-grey-text font-bold"><i class="fa fa-long-arrow-up blue-text mr-3" aria-hidden="true"></i> $ 2000</h6>
+                        <!--/.Card Data-->
+
+
+
+                    </div>
+                    <!--/.Panel-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-md-6 mt-2">
+
+                    <!--Panel-->
+                    <div class="card">
+                        <div class="card-header white-text light-blue lighten-1">
+                            Sales
+                        </div>
+
+                        <h6 class="ml-4 mt-5 dark-grey-text font-bold"><i class="fa fa-long-arrow-down red-text mr-3" aria-hidden="true"></i> $ 2000</h6>
+                        <!--/.Card Data-->
+
+
+                    </div>
+                    <!--/.Panel-->
+
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-xl-3 col-md-6 mt-2">
+
+                    <!--Panel-->
+                    <div class="card">
+                        <div class="card-header white-text red accent-2">
+                            Daily Sales
+                        </div>
+
+                        <h6 class="ml-4 mt-5 dark-grey-text font-bold"><i class="fa fa-long-arrow-down red-text mr-3" aria-hidden="true"></i> $ 2000</h6>
+                        <!--/.Card Data-->
+
+
+                    </div>
+                    <!--/.Panel-->
+
+
+                </div>
+                <!--Grid column-->
+            </div>
+            <!-- Links --></section>
+        </main>
+    </section>
+
 {% endblock %}
 </body>
 
