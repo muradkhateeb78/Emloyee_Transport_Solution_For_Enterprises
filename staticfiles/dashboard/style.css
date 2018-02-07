@@ -17,7 +17,7 @@
     left: 0;
     background-color: green;
     overflow-x: hidden;
-    transition: 0.5s;
+    transition: 0.4s;
     padding-top: 60px;
 }
 
@@ -27,10 +27,13 @@
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.5s;
+    transition: 0.4s;
 }
 #slide {
-    transition: 0.5s;
+    transition: 0.4s;
+}
+#mainContent {
+    transition: 0.4s;
 }
 
 .sidenav a:hover {

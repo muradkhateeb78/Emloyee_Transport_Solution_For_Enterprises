@@ -11,12 +11,12 @@
     <link href="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/css/bootstrap.min.css' %}" rel="stylesheet">
     <link href="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/css/mdb.min.css' %}" rel="stylesheet">
     <link href="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/css/style.css' %}" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="{% static '/dashboard/style.css' %}">
     {% block head %}
     {% endblock %}
 </head>
-<body>
-<div id="mySidenav" class="sidenav ">
+<body class="fixed-sn black-skin">
+{#    sideNaviagtionBar#}
+    <div id="mySidenav" class="sidenav ">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
         <div class="view overlay hm-blue-light">
             <div class="logo-wrapper">
@@ -140,6 +140,8 @@
             </nav>
         </header>
     </section>
+{% block body %}
+{% endblock %}
 {#Javascript Files#}
 <script type="text/javascript" src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/js/jquery-3.2.1.min.js' %}"></script>
 <script type="text/javascript" src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/js/popper.min.js' %}"></script>
@@ -177,14 +179,14 @@
     function openNav() {
     document.getElementById("mySidenav").style.width = "250px";
     document.getElementById("slide").style.marginLeft = "250px";
-    document.getElementById("champion").style.marginLeft = "250px";
+    document.getElementById("mainContent").style.marginLeft = "250px";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
     document.getElementById("slide").style.marginLeft = "0";
-    document.getElementById("champion").style.marginLeft = "0";
+    document.getElementById("mainContent").style.marginLeft = "0";
 }
 </script>
 <script async defer
@@ -209,7 +211,5 @@ function closeNav() {
         }
     });
 </script>
-{% block body %}
-{% endblock %}
 </body>
 </html>
