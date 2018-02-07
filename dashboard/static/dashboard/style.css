@@ -32,6 +32,9 @@
 #slide {
     transition: 0.5s;
 }
+#champion {
+    transition: 0.5s;
+}
 
 .sidenav a:hover {
     color: #f1f1f1;

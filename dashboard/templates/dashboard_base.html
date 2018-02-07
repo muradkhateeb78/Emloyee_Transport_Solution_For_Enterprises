@@ -1,18 +1,22 @@
-{% extends 'base.html' %}
 <!DOCTYPE html>
 <html lang="en" xmlns:padding-left="http://www.w3.org/1999/xhtml">
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    {#Style Sheets#}
+    {% load static %}
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/css/bootstrap.min.css' %}" rel="stylesheet">
+    <link href="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/css/mdb.min.css' %}" rel="stylesheet">
+    <link href="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/css/style.css' %}" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{% static '/dashboard/style.css' %}">
     {% block head %}
-        <title>Employee Transport Solution For Enterprises</title>
-        {% load static %}
-        <link rel="stylesheet" type="text/css" href="{% static '/dashboard/style.css' %}">
     {% endblock %}
 </head>
-
 <body>
-{% block body %}
-    {#    sideNaviagtionBar#}
-    <div id="mySidenav" class="sidenav ">
+<div id="mySidenav" class="sidenav ">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()" >&times;</a>
         <div class="view overlay hm-blue-light">
             <div class="logo-wrapper">
@@ -132,143 +136,80 @@
                             </div>
                         </li>
                     </ul>
-
                 </div>
-
             </nav>
-
-
-
         </header>
-
-        <main class="container-fluid">
-            <section>
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-xl-8 col-md-6 mt-4 mb-r">
-
-                        <!--Panel-->
-                        <div class="card">
-                            <div class="card-header white-text primary-color text-center">
-                                Live Vehicle Tracking
-                            </div>
-                            <div class="container mt-2 mb-2">
-                                <div class="view overlay hm-white-light z-depth-1-half">
-                                    <img src="/static/Employee_Transport_Solution_For_Enterprises/MDB/img/myImages/map.jpg" style="height: 400px" class="img-fluid" alt="">
-                                    <div class="mask"></div>
-                                </div></div>
-                        </div>
-                        <!--/.Panel-->
-
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-xl-4 col-md-6 mt-4 mb-r">
-
-                        <!--Panel-->
-                        <div class="card">
-                            <div class="card-header white-text red accent-2 text-center">
-                                Vehicles Usability Graph
-                            </div>
-                            <canvas id="pieChart" class="img-fluid"></canvas>
-                        </div>
-                        <!--/.Panel-->
-
-
-                    </div>
-                    <!--Grid column-->
-                </div>
-                <!--Grid row-->
-
-            </section>       <section class="container-fluid">
-            <div class="row mb-4">
-
-                <!--Grid column-->
-                <div class="col-xl-3 col-md-6 mt-2">
-
-                    <!--Panel-->
-                    <div class="card">
-                        <div class="card-header white-text primary-color">
-                            Orders
-                        </div>
-
-                        <h6 class="ml-4 mt-5 dark-grey-text font-bold"><i class="fa fa-long-arrow-up blue-text mr-3" aria-hidden="true"></i> 2000</h6>
-                        <!--/.Card Data-->
-
-                    </div>
-                    <!--/.Panel-->
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-xl-3 col-md-6 mt-2">
-
-                    <!--Panel-->
-                    <div class="card">
-                        <div class="card-header white-text warning-color">
-                            Monthly sales
-                        </div>
-
-                        <h6 class="ml-4 mt-5 dark-grey-text font-bold"><i class="fa fa-long-arrow-up blue-text mr-3" aria-hidden="true"></i> $ 2000</h6>
-                        <!--/.Card Data-->
-
-
-
-                    </div>
-                    <!--/.Panel-->
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-xl-3 col-md-6 mt-2">
-
-                    <!--Panel-->
-                    <div class="card">
-                        <div class="card-header white-text light-blue lighten-1">
-                            Sales
-                        </div>
-
-                        <h6 class="ml-4 mt-5 dark-grey-text font-bold"><i class="fa fa-long-arrow-down red-text mr-3" aria-hidden="true"></i> $ 2000</h6>
-                        <!--/.Card Data-->
-
-
-                    </div>
-                    <!--/.Panel-->
-
-                </div>
-                <!--Grid column-->
-
-                <!--Grid column-->
-                <div class="col-xl-3 col-md-6 mt-2">
-
-                    <!--Panel-->
-                    <div class="card">
-                        <div class="card-header white-text red accent-2">
-                            Daily Sales
-                        </div>
-
-                        <h6 class="ml-4 mt-5 dark-grey-text font-bold"><i class="fa fa-long-arrow-down red-text mr-3" aria-hidden="true"></i> $ 2000</h6>
-                        <!--/.Card Data-->
-
-
-                    </div>
-                    <!--/.Panel-->
-
-
-                </div>
-                <!--Grid column-->
-            </div>
-            <!-- Links --></section>
-        </main>
     </section>
+{#Javascript Files#}
+<script type="text/javascript" src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/js/jquery-3.2.1.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/js/popper.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/js/bootstrap.min.js' %}"></script>
+<script type="text/javascript" src="{% static 'Employee_Transport_Solution_For_Enterprises/MDB/js/mdb.min.js' %}"></script>
+<script>
+    $('.carousel').carousel({
+        interval: 3000,
+    })
+</script>
 
+<!-- SCRIPTS -->
+<!-- JQuery -->
+<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+<!-- Bootstrap tooltips -->
+<script type="text/javascript" src="js/popper.min.js"></script>
+<!-- Bootstrap core JavaScript -->
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<!-- MDB core JavaScript -->
+<script type="text/javascript" src="js/mdb.min.js"></script>
+<script>
+    function initMap() {
+        var uluru = {lat: -25.363, lng: 131.044};
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 4,
+            center: uluru
+        });
+        var marker = new google.maps.Marker({
+            position: uluru,
+            map: map
+        });
+    }
+</script>
+<script>
+    function openNav() {
+    document.getElementById("mySidenav").style.width = "250px";
+    document.getElementById("slide").style.marginLeft = "250px";
+    document.getElementById("champion").style.marginLeft = "250px";
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
+function closeNav() {
+    document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("slide").style.marginLeft = "0";
+    document.getElementById("champion").style.marginLeft = "0";
+}
+</script>
+<script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+</script>
+<script>
+    var ctxP = document.getElementById("pieChart").getContext('2d');
+    var myPieChart = new Chart(ctxP, {
+        type: 'pie',
+        data: {
+            labels: ["Red", "Green", "Yellow", "Blue", "Dark Grey"],
+            datasets: [
+                {
+                    data: [300, 50, 100, 40, 120],
+                    backgroundColor: ["#F7464A", "#008000", "#FDB45C", "#0000FF", "#4D5360"],
+                    hoverBackgroundColor: ["#FF5A5E", "#008040", "#FFC870", "#000F22", "#616774"]
+                }
+            ]
+        },
+        options: {
+            responsive: true
+        }
+    });
+</script>
+{% block body %}
 {% endblock %}
 </body>
-
 </html>
