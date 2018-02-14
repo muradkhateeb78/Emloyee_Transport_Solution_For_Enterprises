@@ -18,7 +18,10 @@ from django.contrib import admin
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^home/', include('landing_page.urls')),
-    url(r'^homeagain/', include('homepage.urls')),
-url(r'^dashboard/', include('dashboard.urls')),
+    url(r'^home/', include('homepage.urls')),
+    url(r'^dashboard/', include('dashboard.urls')),
+    url(r'^transport_resources/', include('transport_resources.urls')),
+    url(r'^track_vehicle/', include('track_vehicles.urls')),
+    url(r'^employees/', include('employees.urls')),
 ]
+

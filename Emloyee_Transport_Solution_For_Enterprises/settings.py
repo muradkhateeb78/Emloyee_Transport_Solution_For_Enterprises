@@ -37,9 +37,11 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'landing_page',
     'homepage',
     'dashboard',
+    'transport_resources',
+    'track_vehicles',
+    'employees',
 ]
 
 MIDDLEWARE = [
@@ -79,8 +81,10 @@ WSGI_APPLICATION = 'Emloyee_Transport_Solution_For_Enterprises.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'django',
+        'USER': 'root',
+        'PASSWORD': '',
     }
 }
 

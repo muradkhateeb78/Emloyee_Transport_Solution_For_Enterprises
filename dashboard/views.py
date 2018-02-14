@@ -5,6 +5,6 @@ from django.template import loader
 def index(request):
     name = 'murad'
     context = {
-        'loveName': name,
+        'yourName': name,
     }
     return render(request, 'dashboard/index.html',context)
