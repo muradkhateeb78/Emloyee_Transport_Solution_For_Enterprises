@@ -1,0 +1,189 @@
+{% extends 'dashboard_base.html' %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    {% block head %}
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        {% load static %}
+        <style>
+            .acc-col{
+
+
+                min-height: 300px;
+                margin-top: 5%;
+                background-color: #ffffff;
+                padding: 20px;
+                /*      border:#333 solid 1px;*/
+
+            }
+            .acc-col > h3{
+                padding-bottom: 20px;
+            }
+            hr{
+                border:solid 1px #d6d6d6;
+            }
+            section > form > div{
+
+                padding: 5px;
+            }
+            .btn-div{
+
+                margin-top:10px;
+                padding-bottom: 10px;
+            }
+
+
+            .ui-67 .ui-head{
+                text-align:center;
+                padding:30px 0px;
+                position:relative;
+                border-bottom:2px solid #fff;
+                box-shadow:0px 0px 5px rgba(0,0,0,0.1);
+                background-color: #1997c6;
+            }
+            /* Details */
+            .ui-67 .ui-head .ui-details{
+                margin:0px 0px 74px;
+            }
+            .ui-67 .ui-head .ui-details h3{
+                color:#fff;
+                font-size:40px;
+                line-height:60px;
+                font-weight:300;
+            }
+            @media (max-width:400px){
+                .ui-67 .ui-head .ui-details h3{
+                    font-size:25px;
+                    line-height:40px;
+                    font-weight:400;
+                }
+            }
+            .ui-67 .ui-head .ui-details h4{
+                color:#fff;
+                font-size:18px;
+                line-height:38px;
+                font-weight:400;
+            }
+            /* Image */
+            .ui-67 .ui-head .ui-image{
+                width:100%;
+                position:absolute;
+                bottom:-55px;
+                z-index: 10;
+            }
+            .ui-67 .ui-head img{
+                width:120px;
+                border-radius:100%;
+                margin:0px auto;
+                border:4px solid #fff;
+                box-shadow:0px 0px 15px rgba(0,0,0,0.1);
+            }
+
+        </style>
+    {% endblock %}
+
+</head>
+<body>
+{% block body %}
+    <section id="mainContent" class="container-fluid">
+    <div class="ui-content">
+
+        <div class="row">
+
+            <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-2 acc-col">
+                <section>
+                    <h3>Contact Information</h3>
+                    <form class="ng-pristine ng-valid" role="form">
+                        <div class="row">
+                            <div class="col-sm-12">
+                                <label for="inputName" class="control-label">Name:</label>
+                                <input type="text" class="form-control" id="inputName">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <label for="inputEmail3" class="control-label">Email:</label>
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                            <div class="col-sm-6">
+                                <label for="inputPassword3" class="control-label">Phone Number:</label>
+                                <input type="text" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-4">
+                                <label for="inputEmail3" class="control-label">Address:</label>
+                                <input type="email" class="form-control" id="inputEmail3">
+                            </div>
+                            <div class="col-sm-4">
+                                <label for="inputPassword3" class="control-label">City:</label>
+                                <input type="text" class="form-control" id="inputPassword3">
+                            </div>
+
+                            <div class="col-sm-2">
+                                <label for="inputPassword3" class="control-label">State/Province:</label>
+                                <input type="text" class="form-control" id="inputPassword3">
+                            </div>
+
+                            <div class="col-sm-2">
+                                <label for="inputPassword3" class="control-label">Zipcode:</label>
+                                <input type="text" class="form-control" id="inputPassword3">
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-sm-12">
+                            <div class="btn-div">
+                                <a href="https://creativethoughtz.com" class="btn btn-success pull-right">Update</a>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            <div class="col-sm-6 col-md-6 col-lg-6 col-lg-offset-2 acc-col">
+
+                <section>
+
+                    <h3>Personal Information</h3>
+                    <form class="ng-pristine ng-valid" role="form">
+                        <div class="row mt-5">
+
+                            <div class="col-sm-12">
+                                <label for="inputPassword3" class="col-sm-12 control-label">About Me:</label>
+                                <div class="">
+                                    <textarea rows="5" class="form-control" id="inputPassword3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="inputPassword3" class="col-sm-12 control-label">About Me:</label>
+                                <div class="">
+                                    <textarea rows="5" class="form-control" id="inputPassword3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <label for="inputPassword3" class="col-sm-12 control-label">About Me:</label>
+                                <div class="">
+                                    <textarea rows="5" class="form-control" id="inputPassword3"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-sm-12">
+                                <div class="btn-div">
+                                    <a href="https://creativethoughtz.com" class="btn btn-success pull-right">Update</a>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+
+            </div>
+            <!-- col-8 -->
+        </div>
+
+    </div>
+    </section>
+{% endblock %}
+</body>
+</html>
