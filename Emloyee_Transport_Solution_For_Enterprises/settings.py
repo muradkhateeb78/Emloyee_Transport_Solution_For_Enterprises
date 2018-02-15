@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'transport_resources',
     'track_vehicles',
     'employees',
+    'accounts',
+    'settings',
 ]
 
 MIDDLEWARE = [

@@ -41,7 +41,7 @@
     <hr>
     <div class="view overlay hm-blue-light">
         <div class="nav-item black-text-strong">
-            <a class="nav-link">
+            <a class="nav-link" link="/transport_resources">
                 <i class="fa fa-gear"></i>
                 <span class="clearfix d-none d-sm-inline-block">Resources</span>
             </a>
@@ -89,13 +89,10 @@
     <hr>
     <div class="view overlay hm-blue-light">
         <div class="nav-item black-text-strong">
-            <a class="nav-link">
+            <a class="nav-link" href="/settings">
                 <i class="fa fa-gear"></i>
                 <span class="clearfix d-none d-sm-inline-block">Settings</span>
             </a>
-        </div>
-        <div class="mask flex-center">
-            <p class="white-text"></p>
         </div>
     </div>
 </div>
@@ -112,7 +109,7 @@
                     <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
                 </form>
                 <form class="form-inline" style="height: 30px">
-                    <button type="button" class="btn btn-green rounded-circle">Search</button>
+                    <button type="button" class="btn btn-green">Search</button>
                 </form>
                 <ul class="nav navbar-nav nav-flex-icons ml-auto">
                     <li class="nav-item">
@@ -122,7 +119,7 @@
                         </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link">
+                        <a class="nav-link" href="/settings">
                             <i class="fa fa-gear"></i>
                             <span class="clearfix d-none d-sm-inline-block">Settings</span>
                         </a>
@@ -133,7 +130,7 @@
                             <span class="clearfix d-none d-sm-inline-block">Account</span>
                         </a>
                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-                            <a class="dropdown-item" href="/homeagain">Log Out</a>
+                            <a class="dropdown-item" href="/home">Log Out</a>
                         </div>
                     </li>
                 </ul>
@@ -171,6 +168,7 @@
 
 {#Side Naviagation Bar#}
 <script>
+
     function openNav() {
         document.getElementById("mySidenav").style.width = "250px";
         document.getElementById("slide").style.marginLeft = "250px";

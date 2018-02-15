@@ -23,5 +23,7 @@ urlpatterns = [
     url(r'^transport_resources/', include('transport_resources.urls')),
     url(r'^track_vehicle/', include('track_vehicles.urls')),
     url(r'^employees/', include('employees.urls')),
+    url(r'^accounts/', include('accounts.urls')),
+    url(r'^settings/', include('settings.urls')),
 ]
 
